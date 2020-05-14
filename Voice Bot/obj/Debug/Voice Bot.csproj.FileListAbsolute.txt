@@ -8,3 +8,13 @@ C:\Users\Osbert\source\repos\Voice Bot\Voice Bot\obj\Debug\Voice Bot.csproj.Gene
 C:\Users\Osbert\source\repos\Voice Bot\Voice Bot\obj\Debug\Voice Bot.csproj.CoreCompileInputs.cache
 C:\Users\Osbert\source\repos\Voice Bot\Voice Bot\obj\Debug\Voice Bot.exe
 C:\Users\Osbert\source\repos\Voice Bot\Voice Bot\obj\Debug\Voice Bot.pdb
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\bin\Debug\Voice Bot.exe.config
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\bin\Debug\Voice Bot.exe
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\bin\Debug\Voice Bot.pdb
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice Bot.csprojAssemblyReference.cache
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice_Bot.Form1.resources
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice_Bot.Properties.Resources.resources
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice Bot.csproj.GenerateResource.cache
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice Bot.csproj.CoreCompileInputs.cache
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice Bot.exe
+C:\Users\Osbert\source\repos\Voice-Bot-2\Voice Bot\obj\Debug\Voice Bot.pdb

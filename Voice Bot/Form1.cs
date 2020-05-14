@@ -21,8 +21,8 @@ namespace Voice_Bot
         Boolean on = false;
 
         //Grammar and Reponses
-        String[] grammarFile = (File.ReadAllLines(@"C:\Voice Bot\grammar.txt"));
-        String[] responseFile = (File.ReadAllLines(@"C:\Voice Bot\response.txt"));
+        String[] grammarFile = (File.ReadAllLines(@"Commands\grammar.txt"));
+        String[] responseFile = (File.ReadAllLines(@"Commands\response.txt"));
 
         //Speech Synth
         SpeechSynthesizer speechSynth = new SpeechSynthesizer();
@@ -32,8 +32,8 @@ namespace Voice_Bot
         SpeechRecognitionEngine speechRecognition = new SpeechRecognitionEngine();
 
         //my classes
-        String[] classesFile = (File.ReadAllLines(@"C:\Voice Bot\classes.txt"));
-        String[] zoomFile = (File.ReadAllLines(@"C:\Voice Bot\zoom.txt"));
+        String[] classesFile = (File.ReadAllLines(@"Commands\classes.txt"));
+        String[] zoomFile = (File.ReadAllLines(@"Commands\zoom.txt"));
 
         public Form1()
         {
@@ -96,14 +96,14 @@ namespace Voice_Bot
                     SystemSounds.Beep.Play();
                 }
                 
-
+                // my deafen hotkey for discord
                 if (Process.GetProcessesByName("Discord").Length > 0 && result.Contains("deafen") && on) //deaf
                 {
                     SendKeys.Send("\\");
                     on = false;
                     say(result);
                 }
-                
+                // my mute hotkey for discord
                 if (Process.GetProcessesByName("Discord").Length > 0 && result.Contains("mute") && on) //mute
                 {
                     SendKeys.Send("{INSERT}");
@@ -151,7 +151,7 @@ namespace Voice_Bot
                     on = false;
                     say(result);
                 }
-
+                // file created for DMT 
                 if (Process.GetProcessesByName("DMT").Length > 0 && result.Contains("lock screen") && on && state.Text.Contains("On"))
                 {
                     SendKeys.Send("+{DOWN}");
@@ -159,13 +159,13 @@ namespace Voice_Bot
                     say("locked");
                 } else if (result.Contains("lock screen") && on && state.Text.Contains("On"))
                 {
-                    Process.Start(@"C:\Users\Osbert\Desktop\dmt\DMT.exe");
-                    System.Threading.Thread.Sleep(2000);
+                    Process.Start(@"C:\Users\Osbert\Desktop\dmt\DMT.exe"); // lock screen location
+                    System.Threading.Thread.Sleep(3000);
                     SendKeys.Send("+{DOWN}");
                     on = false;
                     say("locked");
                 }
-                
+                // snipping tool hot key
                 if (result.Contains("snipping tool") && on && state.Text.Contains("On")) // snipping
                 {
                     SendKeys.Send("^%{UP}");
@@ -190,6 +190,7 @@ namespace Voice_Bot
                     Process.Start("http://linkedin.com/in/osblee/");
 
                 }
+                // my favorite websites
                 if (result.Contains("favorites") && on && state.Text.Contains("On")) //opens favorites
                 {
                     Process.Start("http://youtube.com/");
@@ -200,6 +201,7 @@ namespace Voice_Bot
                     on = false;
                     say("launching");
                 }
+                // open my school pages
                 if (result.Contains("school") && on && state.Text.Contains("On")) //opens school
                 {
                     Process.Start("https://courses.cs.washington.edu/courses/cse143/20sp/");
