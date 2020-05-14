@@ -1,0 +1,21 @@
+*time
+*date
+*who
+*shut down
+*activate
+*restart
+*exit
+*hey bot
+*go away
+*come back
+*nevermind
+*mute
+*deafen
+*print screen
+*lock screen
+*favorites
+*snipping tool
+*school
+*when is class
+*quit
+*go to class
